@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" shrink-to-fit="no">
+    <meta content="portfolio website for Bahriyanto Anang" name="description">
+    <meta content="Bahriyanto Anang https://bahriyanto31.github.io" name="author">
+    <title>My Project</title>
+    <link href="img/favicon.ico" rel="shortcut icon"/>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.css" rel="stylesheet">
+    <style type="text/css">
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          padding-top: 100px; /* Location of the box */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+          background-color: #fefefe;
+          margin: auto;
+          padding: 20px;
+          border: 1px solid #888;
+          width: 80%;
+        }
+
+        /* The Close Button */
+        .close {
+          color: #aaaaaa;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+        }
+    </style>
+    <style>
+        .app-header{
+            top:-150px;
+        }
+        .myapp{
+            top: -200px;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+        @media only screen and (max-width: 640px) {
+          .app-header{
+                top: 0;
+            }
+            .myapp{
+                top: 100px;
+            }
+            .myapp .card{
+                margin: 30px;
+            }
+        }
+        .row {
+            margin-bottom: 10px;
+        }
+        .card{
+            background: lightgray;
+            border-radius: 10px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            color: black;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            margin-bottom: 10px;
+        }
+        .card:hover{
+            background: gray;
+            color: black;
+            cursor: pointer;
+        }
+        .card span{
+            font-size: 22px;
+        }
+    </style>
+
+</head>
+<body>
+
+<button class="buttonmode" onclick="dayNightToggle()">Toggle dark mode</button>
+<span onclick="window.location.href='index.html'" style="float: right; margin-right: 10px; margin-top:10px;">Back</span>
+<div class="container vertical-center app-header">
+    <div class="row spacing col-12 center" style="">
+        <img class="center col-3" src="img/user.svg">
+        <div class="col-12 col-sm-12 col-lg-12 col-md-12 center" style="top: -50px;">
+            <h1>My Project</h1>
+        </div>
+    </div>
+</div>
+<div class="row col-12 myapp" style="">
+    <div class="card col-sm-12 col-md-3 col-lg-3" onclick="openmodal('modal1')">
+        <img class="col-12" src="project/absensi.png">
+        <div class="">
+            <span id="myBtn">Absensi Pegawai Pemerintah Kota Gorontalo Berbasis ADMS </span> <br>
+            <small>(2019-sekarang)</small>
+        </div>
+        <div id="modal1" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p style="color: black;">Some text in the Modal..</p>
+          </div>
+
+        </div>
+    </div>
+    <div class="card col-sm-12 col-md-3 col-lg-3" onclick="window.location.href='http://pilohayanga.web.id/'" title="Go to pilohayanga.web.id">
+        <img class="col-12" src="project/pilohayanga.png">
+        <div class="">
+            <span>Web Desa Pilohayanga Kabupaten Gorontalo</span> <br>
+            <small>(2020-sekarang)</small>
+        </div>
+    </div>
+    <div class="card col-sm-12 col-md-3 col-lg-3">
+        <img class="col-12" src="project/Antrian.png">
+        <div class="">
+            <span>Aplikasi Antrian Pelayanan BKD Kabupaten Bualemo</span> <br>
+            <small>(2021)</small>
+        </div>
+    </div>
+</div>
+<div class="row col-12 myapp">
+    <div class="card col-sm-12 col-md-3 col-lg-3" onclick="openmodal('modal1')">
+        <img class="col-12" src="project/quickcount.png">
+        <div class="">
+            <span id="myBtn">Peta Politik Quick Count Pemprov Gorontalo</span> <br>
+            <small>(2020)</small>
+        </div>
+        <div id="modal1" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p style="color: black;">Some text in the Modal..</p>
+          </div>
+
+        </div>
+    </div>
+    <div class="card col-sm-12 col-md-3 col-lg-3">
+        <img class="col-12" src="project/dbinfra.png">
+        <div class="">
+            <span>Database Sapras Kabupaten Pohuwato</span> <br>
+            <small>(2018-sekarang)</small>
+        </div>
+    </div>
+    <div class="card col-sm-12 col-md-3 col-lg-3">
+        <img class="col-12" src="http://www.smkn3gorontalo.sch.id/asset/foto_agenda/Screenshot_90.png">
+        <div class="">
+            <span>Frontend Website GRHM</span> <br>
+            <small>(2019)</small>
+        </div>
+    </div>
+</div>
+    
+    
+<ul>
+    
+</ul>
+<script src="js/load.js" type="text/javascript"></script>
+<script>
+    var span = document.getElementsByClassName("close")[0];
+    // When the user clicks on <span> (x), close the modal
+    var modalx = '';
+    function openmodal(id){
+        modalx = document.getElementById(id);
+        modalx.style.display = "block";
+        modal=modalx;
+    }
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        } 
+
+</script>
+</body>
+</html>
